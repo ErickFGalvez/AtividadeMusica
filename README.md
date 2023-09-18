@@ -16,13 +16,13 @@ Para criar esse projeto foram utilizados os seguintes passos:
 
 * Esses foram os assets baixados para o projeto
 
-<img src="img/1.jpeg"/>
+<img src="img/1.png"/>
 
 2. Colocar os game objects na cena.
 
 * Para a cena foi adicionados 4 Npcs diferentes para serem alvos do jogador.
 
-<img src="img/2.jpeg"/>
+<img src="img/2.png"/>
 
 * Para facilitar na criação do jogo coloquei um template ja pronto do unity.
 
