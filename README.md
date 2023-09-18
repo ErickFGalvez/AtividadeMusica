@@ -27,7 +27,10 @@ Para criar esse projeto foram utilizados os seguintes passos:
 
 * Para facilitar na criação do jogo coloquei um template ja pronto do unity.
 
-<img src="img/img6.png"/>
+<img src="img2/img6.png"/>
+<img src="img2/img7.png"/>
+<img src="img2/img8.png"/>
+
 
 3.criar os scripts e programar
 
@@ -180,7 +183,9 @@ Para criar esse projeto foram utilizados os seguintes passos:
 
 * Para facilitar na criação do jogo coloquei um template ja pronto do unity.
 
-<img src="img/3.jpeg"/>
+<img src="img2/img6.png"/>
+<img src="img2/img7.png"/>
+<img src="img2/img8.png"/>
 
 3.criar os scripts e programar
 
