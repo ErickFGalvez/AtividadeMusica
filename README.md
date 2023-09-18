@@ -47,11 +47,9 @@ public class Inimigo : MonoBehaviour
 {
     private GameObject player;
     private NavMeshAgent navMesh;
-    private bool podeAtacar;
 
     void Start()
     {
-        podeAtacar = true;
         player = GameObject.FindWithTag("Player"); // Encontra o jogador com a tag "Player".
         navMesh = GetComponent<NavMeshAgent>(); // Obtém o componente NavMeshAgent do inimigo.
     }
@@ -59,26 +57,6 @@ public class Inimigo : MonoBehaviour
     void Update()
     {
         navMesh.destination = player.transform.position; // Define a posição de destino para seguir o jogador.
-        if (Vector3.Distance(transform.position, player.transform.position) < 1.5f)
-        {
-            Atacar(); // Chama a função Atacar quando o jogador está próximo.
-        }
-    }
-
-    void Atacar()
-    {
-        if (podeAtacar == true)
-        {
-            StartCoroutine(TempoDeAtaque()); // Inicia a co-rotina para controlar o tempo entre os ataques.
-            player.GetComponent<Sla>().vida -= 40; // Reduz a vida do jogador (assumindo que ele tenha um script chamado "Sla").
-        }
-    }
-
-    IEnumerator TempoDeAtaque()
-    {
-        podeAtacar = false; // Impede que o inimigo ataque novamente imediatamente.
-        yield return new WaitForSeconds(1); // Espera por 1 segundo.
-        podeAtacar = true; // Permite que o inimigo ataque novamente após o tempo de espera.
     }
 
     // Verifica colisões com objetos chamados "Arrow".
@@ -180,7 +158,129 @@ public class Sla : MonoBehaviour
     }
 }
 
+#Cena 2 
 
+Desenvolvimento
+
+Para criar esse projeto foram utilizados os seguintes passos:
+
+1. baixar assets na assets store.
+
+* Esses foram os assets baixados para o projeto
+
+<img src="img/1.jpeg"/>
+
+2. Colocar os game objects na cena.
+
+* Para a cena foi adicionados 4 Npcs diferentes para atacar o jogador do jogador.
+
+<img src="img/2.jpeg"/>
+
+* Para facilitar na criação do jogo coloquei um template ja pronto do unity.
+
+<img src="img/3.jpeg"/>
+
+3.criar os scripts e programar
+
+* Foram criador 3 scripts
+
+<img src="img/4.jpeg"/>
+<img src="img/4.jpeg"/>
+
+* inimigo.cs segue o codigo comentado.
+
+* using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.AI; // Importe o namespace corretamente.
+
+[RequireComponent(typeof(NavMeshAgent))]
+public class Inimigo : MonoBehaviour
+{
+    private GameObject player;
+    private NavMeshAgent navMesh;
+    private bool podeAtacar;
+
+    void Start()
+    {
+        podeAtacar = true;
+        player = GameObject.FindWithTag("Player"); // Encontra o jogador com a tag "Player".
+        navMesh = GetComponent<NavMeshAgent>(); // Obtém o componente NavMeshAgent do inimigo.
+    }
+
+    void Update()
+    {
+        navMesh.destination = player.transform.position; // Define a posição de destino para seguir o jogador.
+        if (Vector3.Distance(transform.position, player.transform.position) < 1.5f)
+        {
+            Atacar(); // Chama a função Atacar quando o jogador está próximo.
+        }
+    }
+
+    void Atacar()
+    {
+        if (podeAtacar == true)
+        {
+            StartCoroutine(TempoDeAtaque()); // Inicia a co-rotina para controlar o tempo entre os ataques.
+            player.GetComponent<Sla>().vida -= 40; // Reduz a vida do jogador (assumindo que ele tenha um script chamado "Sla").
+        }
+    }
+
+    IEnumerator TempoDeAtaque()
+    {
+        podeAtacar = false; // Impede que o inimigo ataque novamente imediatamente.
+        yield return new WaitForSeconds(1); // Espera por 1 segundo.
+        podeAtacar = true; // Permite que o inimigo ataque novamente após o tempo de espera.
+    }
+
+    // Verifica colisões com objetos chamados "Arrow".
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Arrow")) // Verifica se colidiu com um objeto que tenha a tag "Arrow".
+        {
+            Destroy(gameObject); // Destroi o inimigo quando colide com uma "Arrow".
+        }
+    }
+}
+
+*sla.cs segue o codigo comentado
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement; // Importa o namespace para gerenciamento de cenas do Unity.
+
+public class Sla : MonoBehaviour
+{
+    public int vida = 100; // A quantidade de vida do jogador.
+    public string cena; // O nome da cena para a qual você deseja fazer a transição após a morte do jogador.
+
+    // Start é chamado antes do primeiro frame.
+    void Start()
+    {
+        // Nada é feito aqui neste momento.
+    }
+
+    // Awake é chamado antes do Start e é frequentemente usado para inicializações.
+    void Awake()
+    {
+        transform.tag = "Player"; // Define a tag do objeto como "Player".
+    }
+
+    // Update é chamado uma vez por frame.
+    void Update()
+    {
+        // Verifica se a vida do jogador é menor ou igual a zero.
+        if (vida <= 0)
+        {
+            vida = 0; // Garante que a vida não seja negativa.
+
+            Debug.Log("Morreu"); // Registra no console a mensagem "Morreu".
+
+           
+        }
+    }
+}
 
 
 
