@@ -17,23 +17,24 @@ Para criar esse projeto foram utilizados os seguintes passos:
 * Esses foram os assets baixados para o projeto
 
 <img src="img/img1.png"/>
+<img src="img/img2.png"/>
 
 2. Colocar os game objects na cena.
 
 * Para a cena foi adicionados 4 Npcs diferentes para serem alvos do jogador.
 
-<img src="img/img2.png"/>
+
 
 * Para facilitar na criação do jogo coloquei um template ja pronto do unity.
 
-<img src="img/img3.jpeg"/>
+<img src="img/img5.png"/>
 
 3.criar os scripts e programar
 
 * Foram criador 3 scripts
 
-<img src="img/4.jpeg"/>
-<img src="img/4.jpeg"/>
+<img src="img/img3.png"/>
+<img src="img/img4.png"/>
 
 * Inimigo.cs segue o codigo comentado.
 
