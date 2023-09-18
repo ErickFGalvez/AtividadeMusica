@@ -34,7 +34,7 @@ Para criar esse projeto foram utilizados os seguintes passos:
 
 3.criar os scripts e programar
 
-* Foram criador 3 scripts
+* Foram criador 2 scripts (desconsidere o gun)
 
 <img src="img/img3.png"/>
 <img src="img/img4.png"/>
