@@ -162,6 +162,27 @@ public class Sla : MonoBehaviour
     }
 }
 
+#Codigos não adicionados devido aos erros que informei no teams
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GerenciadorCena : MonoBehaviour
+{
+    void Update()
+    {
+        // Verifica se não há mais GameObjects com a tag "Inimigo" na cena.
+        if (GameObject.FindGameObjectsWithTag("Inimigo").Length == 0)
+        {
+            // Carrega a cena2 quando todos os inimigos forem destruídos.
+            SceneManager.LoadScene("cena2"); // Substitua "cena2" pelo nome da sua cena.
+        }
+    }
+}
+
+
 #Cena 2 
 
 Desenvolvimento
