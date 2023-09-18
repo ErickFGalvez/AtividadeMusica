@@ -23,11 +23,11 @@ Para criar esse projeto foram utilizados os seguintes passos:
 
 * Para a cena foi adicionados 4 Npcs diferentes para serem alvos do jogador.
 
-
+<img src="img/img5.png"/>
 
 * Para facilitar na criação do jogo coloquei um template ja pronto do unity.
 
-<img src="img/img5.png"/>
+<img src="img/img6.png"/>
 
 3.criar os scripts e programar
 
