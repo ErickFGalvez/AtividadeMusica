@@ -2,7 +2,15 @@
 Erick Galvez e Cauã Magalhães
 
 # AtividadeMusica
-Atividade passada pela orientadora Aline Firmino. Um jogo de 2 fases no unity
+Atividade passada pela orientadora Aline Firmino. Um jogo de 2 fases no unity com a inspiração das musicas :
+<br>
+<strong>
+Tiro Ao Alvaro - Adoniran Barbosa. 
+</strong>
+<br>
+<strong>
+Estupido Cupido - Celly Campello.
+</strong>
 
 ## Requisitos
 Para ver essa cena é preciso o Unity com a versão 2021.3.22f1
