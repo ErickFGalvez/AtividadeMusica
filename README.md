@@ -316,6 +316,6 @@ public class GerenciadorCena : MonoBehaviour
 
 ## Segue a imagem e video do bug do unity
 
-<img3 src="img/img1.png"/>
+<img3 src="img/img1.jpeg"/>
 <img3 src="img/video.mp4"/>
 
