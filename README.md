@@ -42,7 +42,7 @@ Para criar esse projeto foram utilizados os seguintes passos:
 <img src="img/img3.png"/>
 <img src="img/img4.png"/>
 
-* Inimigo.cs segue o codigo comentado.
+## Inimigo.cs segue o codigo comentado.
 
 using System.Collections;
 using System.Collections.Generic;
@@ -76,7 +76,7 @@ public class Inimigo : MonoBehaviour
     }
 }
 
-* Gun.cs segue o codigo comentado.
+## Gun.cs segue o codigo comentado.
 
 * using System.Collections;
 using System.Collections.Generic;
@@ -127,7 +127,7 @@ public class Gun : MonoBehaviour
     }
 }
 
-* Sla.cs segue o codigo comentado.
+## Sla.cs segue o codigo comentado.
 
 * using System.Collections;
 using System.Collections.Generic;
@@ -165,28 +165,9 @@ public class Sla : MonoBehaviour
     }
 }
 
-*Codigos não adicionados devido aos erros que informei no teams.
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class GerenciadorCena : MonoBehaviour
-{
-    void Update()
-    {
-        // Verifica se não há mais GameObjects com a tag "Inimigo" na cena.
-        if (GameObject.FindGameObjectsWithTag("Inimigo").Length == 0)
-        {
-            // Carrega a cena2 quando todos os inimigos forem destruídos.
-            SceneManager.LoadScene("cena2"); // Substitua "cena2" pelo nome da sua cena.
-        }
-    }
-}
 
 
-#Cena 2 
+## Cena 2 
 
 Desenvolvimento
 
@@ -218,7 +199,7 @@ Para criar esse projeto foram utilizados os seguintes passos:
 <img src="img/img3.png"/>
 <img src="img/img4.png"/>
 
-* inimigo.cs segue o codigo comentado.
+## inimigo.cs segue o codigo comentado.
 
 * using System.Collections;
 using System.Collections.Generic;
@@ -274,7 +255,7 @@ public class Inimigo : MonoBehaviour
     }
 }
 
-*sla.cs segue o codigo comentado
+## sla.cs segue o codigo comentado
 
 using System.Collections;
 using System.Collections.Generic;
@@ -313,6 +294,28 @@ public class Sla : MonoBehaviour
     }
 }
 
+# Codigos não adicionados devido aos erros que informei no teams.
 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
+public class GerenciadorCena : MonoBehaviour
+{
+    void Update()
+    {
+        // Verifica se não há mais GameObjects com a tag "Inimigo" na cena.
+        if (GameObject.FindGameObjectsWithTag("Inimigo").Length == 0)
+        {
+            // Carrega a cena2 quando todos os inimigos forem destruídos.
+            SceneManager.LoadScene("cena2"); // Substitua "cena2" pelo nome da sua cena.
+        }
+    }
+}
+
+## Segue a imagem e video do bug do unity
+
+<img3 src="img/img1.png"/>
+<img3 src="img/video.mp4"/>
 
