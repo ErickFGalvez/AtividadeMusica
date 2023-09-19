@@ -302,6 +302,17 @@ public class Sla : MonoBehaviour
     }
 }
 
+# Videos do Jogo em Desenvolvimento antes do bug.
+
+
+https://github.com/ErickFGalvez/AtividadeMusica/assets/127852558/ba6a99e3-8d6e-4806-aeaf-496a12365bdf
+
+
+
+https://github.com/ErickFGalvez/AtividadeMusica/assets/127852558/ebd011d8-59ce-4f32-98cf-162aa680116b
+
+
+
 # Codigos não adicionados devido aos erros que informei no teams.
 
 using System.Collections;
