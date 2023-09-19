@@ -317,5 +317,9 @@ public class GerenciadorCena : MonoBehaviour
 ## Segue a imagem e video do bug do unity
 
 <img src="img3/img1.jpeg"/>
-<img src="img3/video.mp4"/>
+
+
+https://github.com/ErickFGalvez/AtividadeMusica/assets/127852558/ce4ecaf6-ff6b-4ee5-abbf-7e300965703f
+
+
 
